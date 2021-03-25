@@ -1,7 +1,7 @@
 from selenium import webdriver
 driver = webdriver.Chrome(executable_path="C:\Program Files\Google\Chrome\Application\chromedriver.exe")
 driver.maximize_window()
-driver.get("file:///H:/project/demo.html")
+driver.get("https://responsiveblogtask.000webhostapp.com/")
 driver.find_element_by_id('name').send_keys('pirai infotech')
 driver.find_element_by_id('register').send_keys('028767')
 driver.find_element_by_id('email').send_keys('hr@piraiinfo.com')
