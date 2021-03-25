@@ -1,0 +1,60 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css"> 
+<script>
+            
+            function addRow()
+            {
+                var name = document.getElementById('name').value;
+                 var register = document.getElementById('register').value;
+                  var email = document.getElementById('email').value;
+				  var phone = document.getElementById('phone').value;
+				  var sex = document.getElementById('sex').value;
+				  var country = document.getElementById('country').value;
+                  
+                 
+                  var table = document.getElementsByTagName('table')[0];
+ 
+                  var newRow = table.insertRow(table.rows.length/2+1);
+        
+                  var cel1 = newRow.insertCell(0);
+                  var cel2 = newRow.insertCell(1);
+                  var cel3 = newRow.insertCell(2);
+				  var cel4 = newRow.insertCell(3);
+				  var cel5 = newRow.insertCell(4);
+				  var cel6 = newRow.insertCell(5);
+				  var cel7 = newRow.insertCell(6);
+
+    
+                  cel1.innerHTML = name;
+                  cel2.innerHTML = register;
+                  cel3.innerHTML = email;
+				  cel4.innerHTML = phone;
+				  cel5.innerHTML = sex;
+				  cel6.innerHTML = country;
+            }
+            
+        </script>
+</head>
+<body>
+<center>
+<input type="text" id="name" name="name" placeholder="name">
+<input type="text" id="register" name="name" placeholder="register no"><br><br>
+<input type="text" id="email" name="name" placeholder="email">
+<input type="text" id="phone" name="name" placeholder="phone"><br><br>
+<input type="text" id="sex" name="name" placeholder="sex">
+<input type="text" id="country" name="name" placeholder="country"><br><br>
+<button id="addrow" onclick="addRow();">Add Row</button><br><br>
+<table border=1>
+  <tr>
+    <th>Name</th>
+    <th>Register Number</th>
+    <th>Email</th>
+	<th>Phone</th>
+	<th>Sex</th>
+	<th>Country</th>
+  </tr>
+</table>
+</center>
+</body>
+</html>
